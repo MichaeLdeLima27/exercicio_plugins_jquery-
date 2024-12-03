@@ -62,9 +62,10 @@ $(document).ready(function () {
         },
         submitHandler: function (form) {
             alert("Sua requisição foi enviada para análise, parabéns pela aquisição!");
-            form.reset(); 
+            form.reset();  // Reseta os campos após o envio
         },
         invalidHandler: function (form, validator) {
+            // Alerta caso algum campo obrigatório não tenha sido preenchido
             alert("Por favor, preencha os campos obrigatórios para prosseguir com a compra!");
         }
     });
